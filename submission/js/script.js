@@ -64,3 +64,35 @@ addBtn.addEventListener("click", () => {
     input.value = "";
 
 });
+// Task 3 - Form Validation
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    const feedback = document.getElementById("feedback");
+
+    if(name === "" || email === ""){
+
+        feedback.textContent = "Please fill in all the fields.";
+        feedback.style.color = "red";
+
+    }
+
+    else{
+
+        feedback.textContent =
+        `Thank you, ${name}! Your test drive request has been received.`;
+
+        feedback.style.color = "green";
+
+        form.reset();
+
+    }
+
+});

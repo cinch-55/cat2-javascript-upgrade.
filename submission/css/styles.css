@@ -433,3 +433,31 @@ footer{
 .dark footer{
     background:#000;
 }
+/* Banner Caption */
+
+.hero-image{
+    position: relative;
+}
+
+#banner{
+    cursor: pointer;
+}
+
+#bannerCaption{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}

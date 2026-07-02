@@ -18,6 +18,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#cars">BYD Cars</a></li>
+            <li><a href="#wishlist-section">Wishlist</a></li>
             <li><a href="#charging">Charging</a></li>
             <li><a href="#warranty">Warranty</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -26,12 +27,26 @@
 
     <main>
 
+        <!-- About Section -->
         <section id="about" class="hero">
+
             <div class="hero-image">
-                <img id="banner" src="images/banner.jpeg" alt="BYD Car Showroom">
+
+    <img id="banner"
+         src="images/banner.jpg"
+         alt="BYD Car Showroom">
+
+    <div id="bannerCaption" class="hidden">
+        <h3>BYD Auto Kenya</h3>
+        <p>Leading Kenya towards a cleaner and smarter electric future.</p>
+    </div>
+
+</div>
+
             </div>
 
             <div class="hero-text">
+
                 <h2>About BYD Auto Kenya</h2>
 
                 <p>
@@ -43,35 +58,46 @@
                 </p>
 
                 <h3>Our Target Customers</h3>
+
                 <ul>
                     <li>Families</li>
                     <li>Business Professionals</li>
                     <li>First-Time EV Buyers</li>
                     <li>Technology Enthusiasts</li>
                 </ul>
+
             </div>
+
         </section>
 
+        <!-- Task 1 -->
         <section id="cars">
-         <h2>Featured BYD Cars</h2>
 
-        <div id="car-list" class="product-grid"></div>
+            <h2>Featured BYD Cars</h2>
+
+            <div id="car-list" class="product-grid"></div>
 
         </section>
+
+        <!-- Task 2 -->
         <section id="wishlist-section">
-    <h2>My BYD Wishlist</h2>
 
-    <input
-        type="text"
-        id="wishlistInput"
-        placeholder="Enter a BYD model">
+            <h2>My BYD Wishlist</h2>
 
-    <button id="addBtn">Add Vehicle</button>
+            <input
+                type="text"
+                id="wishlistInput"
+                placeholder="Enter a BYD model">
 
-    <ul id="wishlist"></ul>
-</section>
+            <button id="addBtn">Add Vehicle</button>
 
+            <ul id="wishlist"></ul>
+
+        </section>
+
+        <!-- Charging -->
         <section id="charging">
+
             <h2>Charging & Delivery</h2>
 
             <p>
@@ -84,9 +110,12 @@
                 <li>Nairobi: Same-day showroom viewing.</li>
                 <li>Nationwide vehicle delivery available.</li>
             </ul>
+
         </section>
 
+        <!-- Warranty -->
         <section id="warranty">
+
             <h2>Warranty Information</h2>
 
             <p>
@@ -99,37 +128,39 @@
                 <li>Service support and maintenance guidance.</li>
                 <li>Warranty covers manufacturing defects.</li>
             </ul>
+
         </section>
 
+        <!-- Task 3 -->
         <section id="contact">
 
-    <h2>Book a Test Drive</h2>
+            <h2>Book a Test Drive</h2>
 
-    <form id="contactForm">
+            <form id="contactForm">
 
-        <input
-            type="text"
-            id="name"
-            placeholder="Enter your full name">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name">
 
-        <br><br>
+                <br><br>
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Enter your email">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email">
 
-        <br><br>
+                <br><br>
 
-        <button type="submit">
-            Book Test Drive
-        </button>
+                <button type="submit">
+                    Book Test Drive
+                </button>
 
-    </form>
+            </form>
 
-    <p id="feedback"></p>
+            <p id="feedback"></p>
 
-</section>
+        </section>
 
     </main>
 
@@ -139,9 +170,6 @@
 
     <!-- External JavaScript -->
     <script src="js/script.js"></script>
-    <script>
-        console.log("Hello! from embedded JavaScript");
-    </script>
 
 </body>
 </html>

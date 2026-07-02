@@ -116,3 +116,12 @@ themeBtn.addEventListener("click", () => {
     }
 
 });
+// Task 5 - Click-to-Reveal Banner
+
+const banner = document.getElementById("banner");
+const bannerCaption = document.getElementById("bannerCaption");
+
+banner.addEventListener("click", () => {
+    bannerCaption.classList.toggle("hidden");
+    bannerCaption.classList.toggle("show");
+});

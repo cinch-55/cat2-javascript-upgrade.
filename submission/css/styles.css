@@ -390,3 +390,46 @@ footer{
     margin-top:1rem;
     font-weight:bold;
 }
+/* Dark Mode */
+
+#themeBtn{
+    margin-top:1rem;
+    padding:0.8rem 1.5rem;
+    background:white;
+    color:#d90429;
+    border:none;
+    border-radius:0.5rem;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#themeBtn:hover{
+    background:#f0f0f0;
+}
+
+.dark{
+    background:#1a202c;
+    color:white;
+}
+
+.dark header{
+    background:#000;
+}
+
+.dark nav{
+    background:#111;
+}
+
+.dark .hero,
+.dark #charging,
+.dark #warranty,
+.dark #contact,
+.dark #wishlist-section,
+.dark .product-card{
+    background:#2d3748;
+    color:white;
+}
+
+.dark footer{
+    background:#000;
+}

@@ -96,3 +96,23 @@ form.addEventListener("submit", function(event){
     }
 
 });
+// Task 4 - Dark Mode with localStorage
+
+const themeBtn = document.getElementById("themeBtn");
+
+// Load saved theme
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark");
+}
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+
+});

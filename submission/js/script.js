@@ -32,3 +32,35 @@ cars.forEach(car => {
 
     container.appendChild(card);
 });
+// Task 2 - Wishlist
+
+const input = document.getElementById("wishlistInput");
+const addBtn = document.getElementById("addBtn");
+const wishlist = document.getElementById("wishlist");
+
+addBtn.addEventListener("click", () => {
+
+    if(input.value.trim() === ""){
+        alert("Please enter a BYD model.");
+        return;
+    }
+
+    const li = document.createElement("li");
+
+    li.textContent = input.value;
+
+    const removeBtn = document.createElement("button");
+
+    removeBtn.textContent = "Remove";
+
+    removeBtn.addEventListener("click", () => {
+        li.remove();
+    });
+
+    li.appendChild(removeBtn);
+
+    wishlist.appendChild(li);
+
+    input.value = "";
+
+});

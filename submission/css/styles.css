@@ -305,3 +305,61 @@ footer{
         list-style-position:inside;
     }
 }
+/* Wishlist Section */
+
+#wishlist-section{
+    background:white;
+    margin:2rem 5%;
+    padding:2rem;
+    border-radius:1.5rem;
+    border:0.1rem solid #ddd;
+}
+
+#wishlist-section h2{
+    color:#d90429;
+    margin-bottom:1rem;
+}
+
+#wishlistInput{
+    width:70%;
+    padding:0.8rem;
+    border:1px solid #ccc;
+    border-radius:0.5rem;
+}
+
+#addBtn{
+    padding:0.8rem 1.2rem;
+    background:#d90429;
+    color:white;
+    border:none;
+    border-radius:0.5rem;
+    cursor:pointer;
+}
+
+#addBtn:hover{
+    background:#9d0208;
+}
+
+#wishlist{
+    list-style:none;
+    margin-top:1.5rem;
+}
+
+#wishlist li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f5f5f5;
+    padding:0.8rem;
+    margin-bottom:0.8rem;
+    border-radius:0.5rem;
+}
+
+#wishlist li button{
+    background:red;
+    color:white;
+    border:none;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+    border-radius:0.5rem;
+}

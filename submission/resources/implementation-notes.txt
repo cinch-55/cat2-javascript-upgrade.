@@ -1,0 +1,32 @@
+CAT 2 JavaScript Implementation Notes
+
+1. Loop-rendered Dynamic Content
+- Implemented a dynamic "Featured BYD Cars" section.
+- Vehicle data is stored in a JavaScript array of objects.
+- Used forEach() to render the vehicles into the DOM.
+- Each object includes a name property.
+
+2. Dynamically Add & Remove Elements
+- Created a BYD Wishlist feature.
+- Users can add a vehicle model using an input field and button.
+- New items are created using createElement() and appendChild().
+- Each item has a Remove button that deletes it using remove().
+
+3. Form Handling with Validation
+- Implemented a Test Drive booking form.
+- Used event.preventDefault() to stop default form submission.
+- Retrieved user input using .value.
+- Displays validation and success messages using textContent.
+
+4. Persistent State with localStorage
+- Implemented a Dark Mode feature.
+- The selected theme is saved using localStorage.
+- The theme is restored automatically when the page is reloaded.
+
+5. Click-to-Reveal Banner
+- Clicking the homepage banner reveals and hides a caption.
+- Implemented using classList.toggle().
+
+Deployment
+- Successfully deployed the website on Render.
+- The live Render URL is recorded in submission/resources/links.txt.
